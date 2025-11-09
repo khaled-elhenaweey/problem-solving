@@ -1,4 +1,10 @@
 function positiveSum(arr) {
- let sum =arr.reduce((a,c)=>{↔},0) ;
-  return sum
+return arr.reduce((item,current)=>{
+          if(current >= 0){
+              return item + current
+          }else{
+              current = 0
+              return item + current 
+          }
+        },0);
 }
